@@ -1,3 +1,9 @@
+/* Enable smooth scrolling and prevent header overlap */
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; 
+}
+
 /* Basic reset and font setup */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -16,6 +22,7 @@ header {
     padding: 20px 0;
     position: sticky;
     top: 0;
+    z-index: 1000; /* Keeps header above other content */
 }
 
 header h1 {
@@ -63,6 +70,26 @@ h2 {
     font-size: 0.9em;
 }
 
+/* Back to Top Floating Button */
+.back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    z-index: 1000;
+}
+
+.back-to-top:hover {
+    background-color: #2c3e50;
+}
+
+/* Footer */
 footer {
     text-align: center;
     padding: 20px;
