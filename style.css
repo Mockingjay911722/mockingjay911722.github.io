@@ -97,3 +97,15 @@ footer {
     color: white;
     margin-top: 40px;
 }
+
+/* Styling for the country links */
+.country-link {
+    color: #2c3e50;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.country-link:hover {
+    color: #3498db;
+    text-decoration: underline;
+}
